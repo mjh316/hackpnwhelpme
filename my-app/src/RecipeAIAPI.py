@@ -12,6 +12,12 @@ import openai
 import tiktoken
 import regex as re
 
+###############################
+
+#---------Deprecated-----------
+
+###############################
+
 # Creating a Flask App
 app = Flask(__name__)
 api = Api(app)
