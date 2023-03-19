@@ -14,7 +14,7 @@ export const POST = (async ({ request }) => {
     const main_prompt = base_prompt_1 + `Give me a random but fully developed idea seeded by ${Math.random()} for a balanced ` + _culture + "-style meal I can make. Give a very accurate, lengthy and thorough recipe that reflects the meal's culture. When outputting your response write the name of the meal in the first line, then add two new lines. Then list the ingredients in a new line in the format \nIngredients:\nFettucine\nSpinach 2\netc.\n (include measurements for ingredients in the same line after their name). \nThen add two more new lines and write the steps in a new line"
     console.log(main_prompt);
     let _response = await openai.createCompletion({
-        model: "text-davinci-003",
+        model: "gpt-3.5-turbo",
         prompt: main_prompt,
         temperature: 0,
         max_tokens: 1000,
